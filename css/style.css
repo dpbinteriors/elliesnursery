@@ -3970,7 +3970,7 @@ img {
     -webkit-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     transition: all 500ms ease;
-    border-radius: 50%;
+    border-radius: 24px;
 }
 
 .team-block .overlay-box .social-icon-colored {
