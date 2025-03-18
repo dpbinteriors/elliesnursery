@@ -38,7 +38,7 @@ if(isset($_POST['submit-form'])) {
         $mail->Port       = 587;                   // TCP port to connect to
 
         // Recipients - Use a verified sender address from your Brevo account
-        $mail->setFrom('hasan.49.5012@gmail.com', "Ellie's Nursery"); // Change to your verified email in Brevo
+        $mail->setFrom('hasan.49.5012@gmail.com', "Ellie's Nurseries"); // Change to your verified email in Brevo
         $mail->addAddress('hasan.49.5012@gmail.com'); // Add a recipient email (change this to your email)
         $mail->addReplyTo($email, $username); // Set form submitter as reply-to address
 
@@ -153,7 +153,7 @@ if(isset($_POST['submit-form'])) {
                 </div>
                 <div class='footer'>
                     <p>This is an automated message from your website contact form.</p>
-                    <p>&copy; " . date('Y') . " Ellie's Nursery. All rights reserved.</p>
+                    <p>&copy; " . date('Y') . " Ellie's Nurseries. All rights reserved.</p>
                 </div>
             </div>
         </body>
