@@ -746,6 +746,10 @@ img {
     content: "";
 }
 
+.main-header .header-lower .logo-outer .logo img{
+    height: 100px;
+}
+
 .main-header .header-lower .nav-outer {
     position: relative;
 }
@@ -757,6 +761,11 @@ img {
 .main-menu .navbar-collapse {
     padding: 0px;
     padding-top: 10px;
+}
+
+.sticky-header .main-menu .navbar-collapse {
+    padding: 0px;
+    padding-top: 15px;
 }
 
 .main-menu .navigation {
@@ -1278,11 +1287,11 @@ img {
     position: relative;
     float: left;
     width: auto;
-    padding-top: 15px;
+    padding-top: 0px !important;
 }
 
 .header-style-two .header-lower .logo-outer .logo img {
-    height: 80px;
+    height: 120px;
 }
 
 .header-style-two .header-lower .logo-outer .logo:before {
@@ -1377,11 +1386,12 @@ img {
 }
 
 .fixed-header .sticky-header .logo {
-    padding: 10px 0;
+    padding: 0;
 }
 
 .fixed-header .sticky-header .logo img {
-    height: 65px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .sticky-header .main-menu .navigation > li {
@@ -3079,10 +3089,14 @@ img {
 
 .about-info-img-area img{
     text-align: center;
-    width: 100%;
+    width: 30%;
     height: 150px;
     object-fit: contain;
+    background:#fff;
+    border-radius:24px;
 }
+
+
 
 .services-tabs .tab-btns .tab-btn.active-btn {
     color: #ffffff;
@@ -5831,7 +5845,12 @@ img {
     background: url('../images/resource/bg_time_table.png') 50% no-repeat;
     background-size: cover;
     padding: 76px 15px;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
+}
+.tab-time-table .menu-tab img{
+    height: 50px;
+    object-fit: cover;
 }
 
 .tf-time-table .container-fluid {
@@ -5848,6 +5867,7 @@ img {
     border-radius: 5px;
     padding: 10px 29px;
     margin: 0 10px;
+
     transition: all .3s ease-in-out
 }
 
@@ -5927,33 +5947,35 @@ img {
     margin-right: 5px
 }
 
+
 .bg1 {
-    background-color: #fc477e
+    background-color: #ff6f96; /* Canlı pastel pembe */
 }
 
 .bg2 {
-    background-color: #b250fe
+    background-color: #be8cff; /* Canlı pastel mor */
 }
 
 .bg3 {
-    background-color: #43b2d8
+    background-color: #5fcde4; /* Canlı pastel mavi */
 }
 
 .bg4 {
-    background-color: #f66
+    background-color: #82c891; /* Canlı pastel yeşil (bordomsu renk yerine) */
 }
 
 .bg5 {
-    background-color: #fab319
+    background-color: #ffc857; /* Canlı pastel sarı */
 }
 
 .bg6 {
-    background-color: #1ab9ff
+    background-color: #4db5ff; /* Canlı pastel açık mavi */
 }
 
 .bg7 {
-    background-color: #fff
+    background-color: #f2f2f2; /* Hafif kırık beyaz */
 }
+
 
 
 .map-column {
