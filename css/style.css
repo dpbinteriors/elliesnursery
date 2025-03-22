@@ -6087,6 +6087,9 @@ img {
         border-radius: 20px;
         height: auto;
     }
+    .about-info-img-area img{
+        width: 100%;
+    }
 }
 
 
