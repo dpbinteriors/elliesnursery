@@ -18,6 +18,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]>
     <script src="js/respond.js"></script><![endif]-->
+    <style>
+        .music-carousel img{
+            height: 450px !important;
+            object-fit: cover !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -69,7 +75,7 @@
                                 </li>
 
 
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="career.html">Career</a></li><li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -134,7 +140,7 @@
                                 </li>
 
 
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="career.html">Career</a></li><li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->
@@ -182,8 +188,19 @@
                 <!-- Image Column -->
                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                     <div class="image-box wow fadeIn">
-                        <figure class="image"><a href="images/resource/program-3.jpg" class="lightbox-image"><img
-                                src="images/resource/program-3.jpg" alt=""></a></figure>
+                        <div class="owl-carousel music-carousel">
+                            <figure class="image">
+                                <a href="images/resource/music-and-mov-1.jpg" class="lightbox-image">
+                                    <img src="images/resource/music-and-mov-1.jpg" alt="">
+                                </a>
+                            </figure>
+                            <figure class="image">
+                                <a href="images/resource/music-and-mov-2.jpg" class="lightbox-image">
+                                    <img src="images/resource/music-and-mov-2.jpg" alt="">
+                                </a>
+                            </figure>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -434,7 +451,7 @@
                                     <div class="widget-content">
                                         <ul class="list">
                                             <li><a href="about.html">About</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="career.html">Career</a></li><li><a href="contact.html">Contact</a></li>
 
                                             <li><a href="menu.html">Food and Nutrition</a></li>
                                         </ul>
@@ -549,5 +566,27 @@
 <script src="js/appear.js"></script>
 <script src="js/parallax.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".music-carousel").owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: false,
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
+        });
+
+
+        // Lightbox Initialization
+        $(".music-carousel").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: { enabled: true }
+        });
+    });
+</script>
 </body>
 </html>
