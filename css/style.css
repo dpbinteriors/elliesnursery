@@ -636,10 +636,9 @@ img {
     width: 100%;
 }
 
-.main-header .header-lower .outer-box .logo-outer .logo{
-    bottom:-70px;
+.main-header .header-lower .outer-box .logo-outer .logo {
+    bottom: -70px;
 }
-
 
 
 .main-header .header-lower .option-box {
@@ -752,7 +751,7 @@ img {
     content: "";
 }
 
-.main-header .header-lower .logo-outer .logo img{
+.main-header .header-lower .logo-outer .logo img {
     height: 170px;
 }
 
@@ -3092,15 +3091,14 @@ img {
 }
 
 
-.about-info-img-area img{
+.about-info-img-area img {
     text-align: center;
     width: 30%;
     height: 150px;
     object-fit: contain;
-    background:#fff;
-    border-radius:24px;
+    background: #fff;
+    border-radius: 24px;
 }
-
 
 
 .services-tabs .tab-btns .tab-btn.active-btn {
@@ -5866,7 +5864,8 @@ img {
     justify-content: center;
     align-items: center;
 }
-.tab-time-table .menu-tab img{
+
+.tab-time-table .menu-tab img {
     height: 50px;
     object-fit: cover;
 }
@@ -5995,7 +5994,6 @@ img {
 }
 
 
-
 .map-column {
     position: relative;
     width: 100%;
@@ -6065,6 +6063,53 @@ img {
     width: 48%;
 }
 
+.owl-carousel .owl-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+
+    color: transparent; /* Yazıyı gizle */
+    border: none;
+    margin-top: 20px;
+}
+
+.owl-carousel .owl-nav .owl-prev::before {
+    content: '<'; /* Sol ok simgesi (Unicode) */
+    color: #000; /* Ok rengi beyaz */
+    font-size: 30px;
+}
+
+.owl-carousel .owl-nav .owl-next::before {
+    content: '>'; /* Sağ ok simgesi (Unicode) */
+    font-size: 30px;
+    color: #000; /* Ok rengi beyaz */
+}
+
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover {
+    opacity: 0.7; /* Hover durumunda opaklık */
+}
+
+.owl-carousel .owl-dot {
+    background-color: #ddd; /* Noktaların arka plan rengi */
+    border-radius: 50%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.owl-carousel .owl-dot.active {
+    background-color: #333; /* Aktif nokta rengi */
+}
+
+
 @media (max-width: 576px) {
     .modal-body {
         flex-direction: column;
@@ -6083,11 +6128,13 @@ img {
         width: 100%;
         margin-bottom: 10px;
     }
-    .team-block .image img{
+
+    .team-block .image img {
         border-radius: 20px;
         height: auto;
     }
-    .about-info-img-area img{
+
+    .about-info-img-area img {
         width: 100%;
     }
 }
