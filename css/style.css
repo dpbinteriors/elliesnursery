@@ -6192,4 +6192,7 @@ img {
         width: 100% !important;
     }
 
+    .mission-block .lower-content{
+        height: auto;
+    }
 }
